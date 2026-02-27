@@ -1,0 +1,34 @@
+{
+  "name": "mcp-demo-products-api",
+  "version": "1.0.0",
+  "description": "Github Copilot mcp lab",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmondcfl/mcp-demo-products-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/edmondcfl/mcp-demo-products-api/issues"
+  },
+  "homepage": "https://github.com/edmondcfl/mcp-demo-products-api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}
