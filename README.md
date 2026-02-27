@@ -52,6 +52,7 @@ Base URL: `http://localhost:3000`
 
 #### List products
 - `GET /products`
+- Optional query parameter: `?limit=2` to limit the number of results.
 
 #### Get product by id
 - `GET /products/:id`
