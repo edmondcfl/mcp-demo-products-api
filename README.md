@@ -92,3 +92,47 @@ npm test
 Test suites included:
 - Unit tests: product validation model (`tests/unit`)
 - Integration tests: API CRUD flow and validation (`tests/integration`)
+
+## API Examples
+
+### JavaScript/Node.js
+```javascript
+const response = await fetch('http://localhost:3000/products');
+const products = await response.json();
+console.log(products);
+```
+
+### Python
+```python
+import requests
+
+# Get all products
+products = requests.get('http://localhost:3000/products').json()
+print(products)
+
+# Create product
+new_product = requests.post('http://localhost:3000/products', json={
+    "name": "Keyboard",
+    "price": 79.99
+}).json()
+print(new_product)
+```
+
+### cURL
+```bash
+# List products
+curl http://localhost:3000/products
+
+# Create product
+curl -X POST http://localhost:3000/products \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Mouse","price":19.99}'
+
+# Update product
+curl -X PUT http://localhost:3000/products/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Wireless Mouse","price":24.99}'
+
+# Delete product
+curl -X DELETE http://localhost:3000/products/1
+```
